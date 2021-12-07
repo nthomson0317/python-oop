@@ -51,6 +51,7 @@ class Circle():
     def __init__(self,radius=1):
 
         self.radius = radius
+        self.area = radius*radius*self.pi
     
     # METHOD
     def get_circumference(self):
@@ -64,3 +65,5 @@ print('radius')
 print(my_circle.radius)
 print('circumference')
 print(my_circle.get_circumference())
+print('area')
+print(my_circle.area)
