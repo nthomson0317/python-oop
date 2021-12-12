@@ -26,13 +26,39 @@ class Dog(Animal):
     def __init__(self):
         Animal.__init__(self)
         print("Dog Created")
+    
+    def who_am_i(self):
+        print("I am a dog")
+
+    def bark(self):
+        print("WOOF!")
 
 my_dog = Dog()
 #=>ANIMAL CREATED
 #=>Dog Created
 
 my_dog.eat()
+#=>I am eating
 
+my_dog.who_am_i()
+#=>I am a dog
+
+my_dog.bark()
+#==> WOOF!
 
 
 # POLYMORPHISM
+
+class Cat():
+    def __init__(self,name):
+        self.name = name 
+
+    def speak(self):
+        return self.name + "says meow!"
+
+class Snake():
+    def __init__(self,name):
+        self.name = name 
+
+    def speak(self):
+        return self.name + "says sssssss!"
