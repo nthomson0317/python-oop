@@ -54,11 +54,40 @@ class Cat():
         self.name = name 
 
     def speak(self):
-        return self.name + "says meow!"
+        return self.name + " says meow!"
 
 class Snake():
     def __init__(self,name):
         self.name = name 
 
     def speak(self):
-        return self.name + "says sssssss!"
+        return self.name + " says sssssss!"
+
+niko = Cat("niko")
+
+felix = Snake("felix")
+
+print(niko.speak())
+#=>niko says meow!
+
+
+print(felix.speak())
+#=>felix says sssssss!
+
+for pet in [niko,felix]:
+    print(type(pet))
+    print(type(pet.speak()))
+
+#<class '__main__.Cat'>
+#<class 'str'>
+#<class '__main__.Snake'>
+#<class 'str'>
+
+def pet_speak(pet):
+    print(pet.speak())
+
+pet_speak(niko)
+#niko says meow!
+
+pet_speak(felix)
+#felix says sssssss!
