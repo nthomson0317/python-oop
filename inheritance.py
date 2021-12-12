@@ -21,8 +21,17 @@ myanimal.eat()
 myanimal.who_am_i
 #=> I am an animal
 
+class Dog(Animal):
 
+    def __init__(self):
+        Animal.__init__(self)
+        print("Dog Created")
 
+my_dog = Dog()
+#=>ANIMAL CREATED
+#=>Dog Created
+
+my_dog.eat()
 
 
 
