@@ -91,3 +91,15 @@ pet_speak(niko)
 
 pet_speak(felix)
 #felix says sssssss!
+
+class Human():
+    def __init__(self,name):
+        self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement this abstract method")
+
+myhuman = Human('fred')
+
+myhuman.speak()
+#==>  raise NotImplementedError("Subclass must implement this abstract method")
