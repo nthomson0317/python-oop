@@ -44,7 +44,8 @@ class Cylinder:
       return  (math.pi * (self.radius ** 2) * self.height)
     
     def surface_area(self):
-        pass
+        # A=2πrh+2πr2
+        return ((2*math.pi*self.radius*self.height) + (2* math.pi * (self.radius ** 2)))
 
 
 # EXAMPLE OUTPUT
@@ -54,3 +55,5 @@ print("volume")
 print(c.volume())
 
 print("surface area")
+
+print(c.surface_area())
