@@ -15,7 +15,8 @@ class Line:
 
     
     def slope(self):
-        pass
+        return ((self.coor2[1] - self.coor1[1]) / (self.coor2[0] - self.coor1[0]))
+        
 
 
 coordinate1 = (3,2)
@@ -23,4 +24,8 @@ coordinate2 = (8,10)
 
 li = Line(coordinate1,coordinate2)
 
+print('distance')
 print(li.distance())
+
+print('slope')
+print(li.slope())
