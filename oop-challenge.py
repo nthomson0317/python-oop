@@ -19,7 +19,16 @@ class Account:
     def __str__(self):
         return "Account owner: " + str(self.owner) +"\n" + "Account balance: $" + str(self.balance)
 
-    # def deposit():
+    def deposit(self,deposit):
+        self.balance += deposit
+        return "Deposit Accepted"
+    
+    def withdraw(self,withdrawal):
+        if self.balance >= withdrawal:
+            self.balance -= withdrawal
+            return "Withdrawal Accepted"
+        else:
+            return "Funds unavailable!"
 
 # # 1. Instantiate the class
 acct1 = Account('Jose',100)
@@ -34,11 +43,11 @@ acct1.owner
 acct1.balance
 # 100
 # # 5. Make a series of deposits and withdrawals
-# acct1.deposit(50)
+print(acct1.deposit(50))
 # Deposit Accepted
-# acct1.withdraw(75)
+print(acct1.withdraw(75))
 # Withdrawal Accepted
 # # 6. Make a withdrawal that exceeds the available balance
-# acct1.withdraw(500)
+print(acct1.withdraw(500))
 # Funds Unavailable!
 
