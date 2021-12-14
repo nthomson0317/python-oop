@@ -15,9 +15,9 @@ class Account:
     def __init__(self,owner,balance):
         self.owner = owner
         self.balance = balance
-    
-        def __str__(self):
-            return f"{self.owner} has {self.balance}"
+
+    def __str__(self):
+        return "Account owner: " + str(self.owner) +"\n" + "Account balance: $" + str(self.balance)
 
     # def deposit():
 
@@ -41,3 +41,4 @@ acct1.balance
 # # 6. Make a withdrawal that exceeds the available balance
 # acct1.withdraw(500)
 # Funds Unavailable!
+
