@@ -18,3 +18,22 @@ number2 = input("Please provide a number")
 
 add(number1,number2)
 #==> TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+try:
+    #WANT TO ATTEMPT THIS CODE
+    #MAY HAVE AN ERROR
+    result = 10 + 10
+except: 
+    print("Hey it looks like you aren't adding correctly.")
+
+result 
+#==> 20
+
+try:
+    #WANT TO ATTEMPT THIS CODE
+    #MAY HAVE AN ERROR
+    result = 10 + '10'
+except: 
+    print("Hey it looks like you aren't adding correctly.")
+    #==> Hey it looks like you aren't adding correctly.
+
