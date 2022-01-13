@@ -9,3 +9,8 @@ print(res)
 
 print(Counter('aaabbbssshhhssssj'))
 #Counter({'s': 7, 'a': 3, 'b': 3, 'h': 3, 'j': 1})
+
+sentence = "How many times does each word show up in this sentence with a word"
+
+print(Counter(sentence.split()))
+#Counter({'word': 2, 'How': 1, 'many': 1, 'times': 1, 'does': 1, 'each': 1, 'show': 1, 'up': 1, 'in': 1, 'this': 1, 'sentence': 1, 'with': 1, 'a': 1})
