@@ -52,3 +52,30 @@ d['WRONG KEY!']
 
 print(d)
 #defaultdict(<function <lambda> at 0x10e64d700>, {'correct': 100, 'WRONG KEY!': 0})
+
+
+mytuple = (10,20,30)
+
+print(mytuple[0])
+#10
+
+from collections import namedtuple
+
+Dog = namedtuple('Dog',['age','breed','name'])
+
+print(Dog)
+#<class '__main__.Dog'>
+
+sammy = Dog(age=5,breed='Husky',name='Sam')
+
+print(type(sammy))
+#<class '__main__.Dog'>
+print(sammy)
+#Dog(age=5, breed='Husky', name='Sam')
+
+print(sammy.age)
+#5
+print(sammy.breed)
+#Husky
+print(sammy[0])
+#5
