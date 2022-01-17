@@ -13,7 +13,8 @@ print(os.listdir())
 
 import shutil
 
-# shutil.move('practice.txt','/Users/nicholas.thomson')
+shutil.move('practice.txt','/Users/nicholas.thomson')
 
 os.listdir('/Users/nicholas.thomson')
 #['collections-module.py', 'errors-and-exceptions.py', 'pip-pypi.py', 'opening-reading.py', 'setdefault.py', 'practice.txt', 'errors-hw.py']
+
