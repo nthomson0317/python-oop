@@ -23,3 +23,25 @@ print(today.month)
 #1
 
 print(today.ctime())
+#Tue Jan 25 00:00:00 2022
+
+from datetime import datetime
+
+mydatetime = datetime(2021,10,3,14,20,1)
+
+print(mydatetime)
+#2021-10-03 14:20:01
+
+mydatetime = mydatetime.replace(year=2020)
+
+print(mydatetime)
+#2020-10-03 14:20:01
+
+from datetime import date
+
+date1 = date(2021,11,3)
+
+date2 = date(2020,11,3)
+
+print(date1 - date2)
+#365 days, 0:00:00
