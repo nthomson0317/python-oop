@@ -21,3 +21,5 @@ print(today.year)
 
 print(today.month)
 #1
+
+print(today.ctime())
