@@ -45,3 +45,9 @@ date2 = date(2020,11,3)
 
 print(date1 - date2)
 #365 days, 0:00:00
+
+datetime1 = datetime(2021,11,3,22,0)
+datetime2 = datetime(2020,11,3,12,0)
+
+print(datetime1 - datetime2)
+#365 days, 10:00:00
