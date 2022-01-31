@@ -43,6 +43,20 @@ class linked_list:
                     return cur_node.data
                 cur_idx+=1
     
+    def erase(self,index):
+        if index>=self.length():
+            print("ERROR: 'Erase' Index out of range!")
+            return
+        cur_idx = 0
+        cur_node = self.head
+        while True:
+            last_node = cur_node
+            cur_node=cur_node.next
+            if cur_idx==index:
+                last_node.next = cur_node.next
+                return
+            cur_idx+=1
+
 my_list = linked_list()
 
 my_list.display()
@@ -59,3 +73,6 @@ my_list.display()
 print("element at 2nd index: %d" % my_list.get(2))
 #element at 2nd index: 3
 
+my_list.erase(1)
+my_list.display()
+#[1, 3, 4]
