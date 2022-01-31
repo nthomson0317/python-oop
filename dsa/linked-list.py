@@ -14,4 +14,12 @@ class linked_list:
             curr = curr.next
         curr.next = new_node
     
+    def length(self):
+        curr = self.head
+        total = 0
+        while curr.next!=None:
+            total+=1
+            curr = curr.next
+        return total
+    
     
