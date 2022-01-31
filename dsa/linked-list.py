@@ -22,4 +22,10 @@ class linked_list:
             curr = curr.next
         return total
     
-    
+    def display(self):
+        elems = []
+        curr_node = self.head
+        while curr_node.next!=None:
+            curr_node=curr_node.next
+            elems.append(curr_node.data)
+        print(elems)
