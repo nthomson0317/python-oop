@@ -29,3 +29,27 @@ class linked_list:
             curr_node=curr_node.next
             elems.append(curr_node.data)
         print(elems)
+    
+    def get(self,index):
+        if index>=self.length():
+            print("ERROR: 'Get' index out of range!")
+            return None
+        else:
+            cur_idx = 0
+            cur_node = self.head
+            while True:
+                cur_node = cur_node.next
+                if cur_idx==index:
+                    return cur_node.data
+                cur_idx+=1
+    
+my_list = linked_list()
+
+my_list.display()
+#[]
+
+my_list.append(1)
+my_list.append(2)
+
+my_list.display()
+#[1, 2]
