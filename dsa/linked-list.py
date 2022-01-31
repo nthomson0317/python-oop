@@ -50,6 +50,12 @@ my_list.display()
 
 my_list.append(1)
 my_list.append(2)
+my_list.append(3)
+my_list.append(4)
 
 my_list.display()
-#[1, 2]
+#[1, 2, 3, 4]
+
+print("element at 2nd index: %d" % my_list.get(2))
+#element at 2nd index: 3
+
