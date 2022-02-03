@@ -36,3 +36,14 @@ def print_items(n):
             for k in range(n):
                 print(i,j,k)
 print_items(10)
+
+
+
+        ## Drop non dominants
+def print_items(n):
+    for i in range(n):
+        for j in range(n):
+            print(i,j)
+    for k in range(n):
+        print(k)
+print_items(10)
