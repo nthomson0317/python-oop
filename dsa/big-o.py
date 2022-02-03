@@ -66,3 +66,11 @@ def print_items(a,b):
         print(i)
     for j in range(b):
         print(j)
+
+##Lists
+
+##adding to the end is O(1)
+##adding to the beginning is O(n) because you have to reindex every list item after starting index
+
+##search a list by value is O(n)
+##search a list by index is O(1) --> you can go directly there in memory
